@@ -1,0 +1,151 @@
+#sec_bar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjust as needed */
+  align-items: center;
+  height: 100vh; /* Full screen height */
+  width: 100vw; /* Full screen width */
+  overflow: hidden;
+  z-index: 1;
+}
+
+#sec_bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("/img/background.png") no-repeat center center;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Ensure the image resizes properly */
+.sec_bar_img {
+  margin-top: 110px;
+  margin-right: 150px;
+  width: 60rex;
+  height: 60rex;
+}
+
+.sec_bar_con {
+  margin: 130px 40px auto 100px;
+}
+
+.tit {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(220, 89, 23);
+}
+
+.tit1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+
+}
+
+.tit2 {
+  font-size: 80px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  background-image: url('/img/multi3.jpg');
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.tit3 {
+  font-size: 20px;
+  color: black;
+}
+
+/* Button Styling */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  border-radius: 50px;
+  width: 200px;
+  background: url("/img/multi1.jpg") no-repeat center;
+  background-size: cover;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.btn_name {
+  margin-right: 10px;
+}
+
+.intro-btn {
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1050px) {
+  .sec_bar_img {
+    margin-top: 150px;
+    margin-right: 70px;
+    width: 450px;
+    height: auto;
+  }
+
+  .sec_bar_con {
+    margin: 130px 40px auto 40px;
+  }
+
+  .tit {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #sec_bar {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  #sec_bar::before {
+    height: 120vh; /* Increased background image height for 600px view */
+  }
+
+  .sec_bar_con {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sec_bar_img {
+    order: 2;
+    margin: 20px 0px 30px 0px;
+    width: 80%;
+    height: auto;
+  }
+
+  .tit, .tit1, .tit2, .tit3, .intro-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+.tit{
+  margin-top:60px;
+}
+}

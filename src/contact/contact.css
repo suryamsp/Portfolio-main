@@ -1,0 +1,130 @@
+.con_contain {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Adjust as needed */
+    align-items: center;
+    height: 400px; /* Full screen height */
+    width: 100vw; /* Full screen width */
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+.con_contain::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    background: url("/img/multi1.jpg") no-repeat center center;
+    background-size: cover;
+    
+
+    opacity: 0.7;
+    z-index: -1;
+  }
+  
+  .con-div{
+    padding: 30px 0px 30px 0px;
+  }
+.big-con{
+ display: flex;
+    width: 1200px;
+    height: 250px;
+    padding: 5px 60px 10px 30px;
+    position: relative;
+    color: rgb(232, 226, 226);
+   margin-left: 50px;
+    border-radius: 20px;
+}
+.small-con{
+    width: 500px;
+}
+.con_tit1{
+    color: rgb(76, 241, 76);
+    font-size: 30px;
+    margin: 15px;
+
+}
+.con_tit2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px;
+}
+.con_tit3{
+    margin: 15px;
+}
+.con_input{
+    margin: 70px 0px 0px 100px;
+    padding: 20px;
+    width: 300px;
+    border-radius: 50px;
+    border: 0px;
+    background-color: white ;
+}
+.con_btn{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: green;
+    cursor: pointer;
+    color:white;
+}
+.con_btn:hover{
+    transform: scale(1.1); 
+  }
+
+
+  @media only screen and (max-width: 1000px){
+    .big-con{
+        width: 880px;
+        height: 250px;
+        margin-top: 40px;
+    }
+    .con_contain{
+        height: 350px;
+    }
+    .con_tit1{
+        font-size: 25px;
+        margin: 15px;
+    }
+    .con_tit2{
+        font-size: 30px;
+    }
+    .small-con{
+        width:500px;
+    }
+    .con_input{
+        margin: 70px 0px 0px 0px;
+    }
+    .con_btn{
+        margin-left: 70px;
+    }
+
+  }
+  @media screen and (max-width: 600px){
+    .big-con{
+        display: flex;
+        flex-direction: column;
+        width: 340px;
+        height: 450px;
+        margin-top: 20px;
+    }
+    .small-con{
+        width:350px;
+    }
+    .con_input{
+        margin: 50px 0px 0px 0px;
+    }
+
+.con_contain{
+    height: 550px;
+}
+.big-con{
+    padding: 5px 5px 5px 25px;
+    display: flex;
+    align-items: center;
+}
+  }
+    

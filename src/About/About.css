@@ -1,0 +1,134 @@
+.Third_bar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjust as needed */
+  align-items: center;
+  height: 680px; /* Full screen height */
+  width: 100vw; /* Full screen width */
+  overflow: hidden;
+  z-index: 1;
+}
+
+
+.Third_bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  background: url("/img/multi1.jpg") no-repeat center center;
+  background-size: cover;
+  
+ 
+   0.9;
+  z-index: -1;
+}
+
+.Third_bar_img {
+  width: 650px;
+  height: auto;
+  max-width: 100%;
+}
+
+.Third_bar_con {
+  margin: 20px 80px auto 50px;
+}
+
+.titl1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(7, 155, 7);
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+.titl2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.titl3 {
+  font-size: 18px;
+  color: black;
+}
+
+.about-div {
+  display: flex;
+}
+
+.high {
+  margin-left: 5px;
+  font-weight: bold;
+  color: orange;
+}
+
+.btns {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  border-radius: 50px;
+  width: 220px;
+  background: url("/img/multi4.jpg") no-repeat center/cover;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btns:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1050px) {
+  .Third_bar {
+    height: 550px;
+  }
+
+  .Third_bar_img {
+    width: 450px;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .Third_bar_con {
+    margin: 80px 10px auto 10px;
+  }
+
+  .titl2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Third_bar {
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Third_bar_img {
+    width: 350px;
+    height: auto;
+    margin: 30px 0;
+  }
+
+  .Third_bar_con {
+    margin: 20px;
+  }
+
+  .titl2 {
+    font-size: 25px;
+  }
+
+  .about-flex {
+    display: grid;
+  }
+}

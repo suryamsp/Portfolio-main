@@ -1,0 +1,151 @@
+.work-cont {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  width: 100vw;
+ 
+ 
+}
+
+.work-cont:before{
+    content: url("/img/background.png");
+    z-index:-1;
+    position:absolute;
+    opacity:0.4;
+  }
+.cont{
+    width: 380px;
+    border-radius: 10px ;
+    padding: 10px;
+    display: flex;
+    height: 460px;
+    align-items: flex-start;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: 0px 30px 60px 0px rgb(0 0 0 / 10%);
+    background-color: rgb(54, 54, 99);
+  
+}
+.work_img{
+    width:360px;
+    height:220px;
+    border-radius:10px;
+    margin: 7px 0px 15px 0px;
+}
+.text-con{
+    margin-left: 20px;
+    max-width: 340px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.work_con{
+padding: 80px;
+    
+}
+button{
+    border: none;
+    background-color: white;
+}
+p{
+    font-size: 17px;
+}
+.work_con1{
+    background-image: url('/img/multi3.jpg');
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+.work_con2{
+    color: rgb(96, 232, 96);
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.work_con3{
+    color: white;
+}
+.work_btn{
+    background-color: rgb(54, 54, 99);
+    display: flex;
+    align-items: center;
+    color: rgb(132, 132, 132);
+    cursor: pointer;
+}
+.work_btn:hover{
+    color: white;
+}
+.work_name{
+    font-size: small;
+    margin-left: 10px;
+}
+.work_img:hover{
+    transform:scale(1.05)
+    }
+
+    .work_cont1, .work_cont2 {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      color: rgb(246, 37, 37);
+      margin-top: 20px;
+  }
+
+ @media only screen and (max-width:1050px){
+    
+.work_con{
+    padding: 50px;
+    margin-left: 40px;       
+    }
+ }   
+
+ @media (max-width: 600px) {
+    .work-cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  
+    }
+  
+    .work-flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .work_con {
+      width: 100%;
+      max-width: 450px;
+      margin: 0px;
+    }
+  
+    .cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .work_img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+    }
+  
+    .text-con {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
